@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/gizmo-ds/big-clever-mod/issues"
+license = "AGPL-3.0"
+
+[[mods]]
+modId = "bigclever"
+version = "${version}"
+displayName = "BigClever"
+authors = "Gizmo"
+description = ""
+logoFile = "bigclever_icon.png"
+
+[modproperties.bigclever]
+catalogueImageIcon="bigclever_icon.png"
+
+[[dependencies.bigclever]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bigclever]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bigclever]]
+modId="cloth_config"
+mandatory=false
+versionRange="[11.0.0,)"
+ordering="AFTER"
+side="BOTH"

@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "dev.aika.bigclever.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "client.MixinConnectScreen",
+    "client.MixinMultiplayerServerListPinger",
+    "client.MixinClientConnection"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

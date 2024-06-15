@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "bigclever",
+  "version": "${version}",
+  "name": "BigClever",
+  "description": "",
+  "authors": [
+    "Gizmo"
+  ],
+  "contact": {
+    "homepage": "https://github.com/gizmo-ds/big-clever-mod",
+    "sources": "https://github.com/gizmo-ds/big-clever-mod",
+    "issues": "https://github.com/gizmo-ds/big-clever-mod/issues"
+  },
+  "license": "AGPL-3.0",
+  "icon": "bigclever_icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.aika.bigclever.fabric.BigCleverFabric"
+    ],
+    "client": [
+      "dev.aika.bigclever.fabric.client.BigCleverFabricClient"
+    ],
+    "modmenu": [
+      "dev.aika.bigclever.fabric.integration.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "bigclever.mixins.json",
+    "bigclever-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*",
+    "cloth-config": ">=11.0.0",
+    "modmenu": ">=7.0.0"
+  }
+}
