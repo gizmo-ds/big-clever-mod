@@ -30,7 +30,7 @@ side = "BOTH"
 
 [[dependencies.bigclever]]
 modId="cloth_config"
-mandatory=false
+mandatory=true
 versionRange="[11.0.0,)"
 ordering="AFTER"
 side="BOTH"
