@@ -17,13 +17,22 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.aika.bigclever.fabric.BigCleverFabric"
+      {
+        "adapter": "kotlin",
+        "value": "dev.aika.bigclever.fabric.BigCleverFabric"
+      }
     ],
     "client": [
-      "dev.aika.bigclever.fabric.client.BigCleverFabricClient"
+      {
+        "adapter": "kotlin",
+        "value": "dev.aika.bigclever.fabric.client.BigCleverFabricClient"
+      }
     ],
     "modmenu": [
-      "dev.aika.bigclever.fabric.integration.ModMenuIntegration"
+      {
+        "adapter": "kotlin",
+        "value": "dev.aika.bigclever.fabric.integration.ModMenuIntegration"
+      }
     ]
   },
   "mixins": [
@@ -34,7 +43,8 @@
     "fabricloader": ">=0.15.11",
     "minecraft": "~1.20.1",
     "java": ">=17",
-    "cloth-config": ">=11.0.0"
+    "cloth-config": ">=11.0.0",
+    "fabric-language-kotlin": ">=1.11.0+kotlin.2.0.0"
   },
   "suggests": {
     "another-mod": "*",
