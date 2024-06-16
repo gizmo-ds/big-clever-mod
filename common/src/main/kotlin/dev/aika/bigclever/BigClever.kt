@@ -18,6 +18,7 @@ object BigClever {
     @JvmField
     val TUNNEL_MANAGER: TunnelManager = TunnelManager()
 
+    @JvmStatic
     fun init() {
         AutoConfig.register(
             BigCleverConfig::class.java

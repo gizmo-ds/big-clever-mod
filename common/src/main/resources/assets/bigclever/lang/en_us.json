@@ -4,5 +4,10 @@
   "text.autoconfig.bigclever.option.wstunnelEnable": "Enable wstunnel",
   "text.autoconfig.bigclever.category.clientTweaks": "Client Tweaks",
   "text.autoconfig.bigclever.option.tweaksMyForgeServerIsCompatible": "My Forge serve is compatible",
-  "text.autoconfig.bigclever.option.tweaksMyForgeServerIsCompatible.@Tooltip": "That Forge servers are always displayed as compatible in the server list"
+  "text.autoconfig.bigclever.option.tweaksMyForgeServerIsCompatible.@Tooltip": "That Forge servers are always displayed as compatible in the server list",
+  "gui.bigclever.tunnelsDownloader.screen_button": "Download Tunnels",
+  "gui.bigclever.tunnelsDownloader.screen_button.tooltip": "Download the tunnels required for Big Clever to work",
+  "gui.bigclever.tunnelsDownloader.title": "Download Tunnels",
+  "gui.bigclever.tunnelsDownloader.refresh": "Refresh List",
+  "gui.bigclever.tunnelsDownloader.download": "Download"
 }

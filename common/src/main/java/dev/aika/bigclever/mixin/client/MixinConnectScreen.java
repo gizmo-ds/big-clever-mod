@@ -3,7 +3,7 @@ package dev.aika.bigclever.mixin.client;
 import dev.aika.bigclever.BigClever;
 import dev.aika.bigclever.interfaces.ClientConnection;
 import dev.aika.bigclever.tunnel.Tunnel;
-import net.minecraft.client.gui.screen.ConnectScreen;
+import net.minecraft.client.gui.screen.multiplayer.ConnectScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.network.ServerAddress;
 import net.minecraft.text.Text;
@@ -28,7 +28,7 @@ public class MixinConnectScreen extends Screen {
     net.minecraft.network.ClientConnection connection;
 
     @ModifyVariable(
-            method = "connect(Lnet/minecraft/client/MinecraftClient;Lnet/minecraft/client/network/ServerAddress;Lnet/minecraft/client/network/ServerInfo;)V",
+            method = "connect(Lnet/minecraft/client/MinecraftClient;Lnet/minecraft/client/network/ServerAddress;Lnet/minecraft/client/network/ServerInfo;Lnet/minecraft/client/network/CookieStorage;)V",
             at = @At("HEAD"), argsOnly = true)
     private ServerAddress connect(ServerAddress address) {
         var tunnel = BigClever.TUNNEL_MANAGER.useTunnel(address.getAddress().trim(), address.getPort(), false);

@@ -23,7 +23,7 @@ public class MixinClientConnection {
         return this.bigclever$tunnel;
     }
 
-    @Inject(method = "disconnect", at = @At("TAIL"))
+    @Inject(method = "disconnect(Lnet/minecraft/text/Text;)V", at = @At("TAIL"))
     public void disconnect(Text disconnectReason, CallbackInfo ci) {
         synchronized (this) {
             if (this.bigclever$tunnel != null) {

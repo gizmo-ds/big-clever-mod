@@ -41,13 +41,13 @@
   ],
   "depends": {
     "fabricloader": ">=0.15.11",
-    "minecraft": "~1.20.1",
-    "java": ">=17",
-    "cloth-config": ">=11.0.0",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "cloth-config": ">=15.0.0",
     "fabric-language-kotlin": ">=1.11.0+kotlin.2.0.0"
   },
   "suggests": {
     "another-mod": "*",
-    "modmenu": ">=7.0.0"
+    "modmenu": "*"
   }
 }

@@ -1,5 +1,5 @@
 modLoader = "kotlinforforge"
-loaderVersion = "[4,)"
+loaderVersion = "[5.3,)"
 issueTrackerURL = "https://github.com/gizmo-ds/big-clever-mod/issues"
 license = "AGPL-3.0"
 
@@ -15,22 +15,27 @@ logoFile = "bigclever_icon.png"
 catalogueImageIcon="bigclever_icon.png"
 
 [[dependencies.bigclever]]
-modId = "forge"
-mandatory = true
-versionRange = "[47,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.bigclever]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
+type = "required"
+versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.bigclever]]
 modId="cloth_config"
-mandatory=true
-versionRange="[11.0.0,)"
+type = "required"
+versionRange="[15.0.0,)"
 ordering="AFTER"
 side="BOTH"
+
+[[mixins]]
+config = "bigclever.mixins.json"
+[[mixins]]
+config = "bigclever-common.mixins.json"

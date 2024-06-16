@@ -12,11 +12,6 @@ class BigCleverConfig : ConfigData {
     @ConfigEntry.Category("serverTunnel")
     var wstunnelEnable: Boolean = true
 
-    @JvmField
-    @ConfigEntry.Category("clientTweaks")
-    @ConfigEntry.Gui.Tooltip
-    var tweaksMyForgeServerIsCompatible: Boolean = true
-
     companion object {
         @JvmStatic
         val config: BigCleverConfig
